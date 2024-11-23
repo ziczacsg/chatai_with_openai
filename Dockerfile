@@ -10,6 +10,7 @@ COPY requirements.txt /app/
 
 # Cài đặt các thư viện từ requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --upgrade llama-index
 
 # Mở cổng cho Flask
 EXPOSE 5000
